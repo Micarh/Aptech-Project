@@ -189,13 +189,13 @@ header {
     display: flex;
     margin: auto;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 0%;
     flex-wrap: wrap;
 }
 
 .section_body{
     display: flex;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     align-items: center;
 }
 
