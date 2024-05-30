@@ -18,6 +18,46 @@ header {
     padding-bottom: 15%;
     /* Add custom font family here */
 }
+.container1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+  }
+  
+  .info {
+    margin-right: 50px;
+    color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icon i {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .social-icon i:hover {
+    color: red;
+    transform: rotateY(180deg);
+  }
 
 /* Container to center content */
 .container {
@@ -25,7 +65,7 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
     position: sticky;
@@ -150,6 +190,7 @@ header {
     margin: auto;
     flex-direction: column;
     padding-top: 10%;
+    flex-wrap: wrap;
 }
 
 .section_body{
@@ -177,6 +218,7 @@ header {
     margin: auto;
     width: 90%;
     margin-bottom: 10%;
+    flex-wrap: wrap;
 }
 
 .box{
@@ -190,6 +232,7 @@ header {
     border-radius: 5px;
     padding: 20px;
     transition: box-shadow 1.5s ease;
+    margin-top: 10px;
 }
 
 .box:hover{
@@ -214,42 +257,67 @@ header {
     color: red;
 }
 
-.emargency-care {
-    padding: 67px 0
+.section3{
+    background-image: url("blitzment-RnUjDqsDs5I-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .emargency-care {
-        padding: 50px 0
-    }
+.single-emargency{
+    padding: 5%;
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
 }
 
-@media (max-width: 575px) {
-    .emargency-care {
-        padding: 50px 0
-    }
+.emargency-cap{
+
 }
 
-.emargency-care .single-emargency {
-    padding: 81px 50px 76px 140px;
-    border-radius: 0;
-    margin-right: -12px;
-    position: relative
+.emargency-cap a{
+    text-decoration: none;
+    color: black;
 }
-
-.emargency-care .single-emargency::before {
+.abstract{
     position: absolute;
-    content: "";
-    background-color: #EFFDFF;
-    width: 1000%;
-    height: 100%;
-    left: 12px;
-    top: 0;
-    bottom: 0;
-    z-index: 0
+    transform: translate(-150%, 75%);
+}
+
+#emargency-link{
+    font-size: 2.5rem;
+}
+
+.emargency-cap a:hover{
+    color: red;
+    transition: 0.5s ease;
 }
 
 
+.learn-btn{
+    background-color: rgb(205, 24, 24);
+    padding: 25px;
+    height: 100%;
+    border-style: none;
+    margin-top: 1%;
+
+}
+
+.learn-btn a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.learn-btn a:hover{
+    font-size:18px;
+    color: #ffffff;
+    transition: 0.5s ease;
+}
 /* Footer styles */
 footer {
     background-color: #333;
