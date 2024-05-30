@@ -1,0 +1,265 @@
+/* Reset some default styles */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    /* Add custom font family here */
+}
+
+/* Header styles */
+header {
+    background-image: url("daniel-olah-MvoWhoTzEqo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: "Jost", sans-serif;
+    padding-bottom: 15%;
+    /* Add custom font family here */
+}
+
+/* Container to center content */
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: sticky;
+    margin-bottom: 10%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search_icon{
+     font-size: larger; 
+     padding-left: 20px;
+     padding-right: 20px;
+     color: #cacaca;
+}
+
+.search_icon :hover{
+     font-size: x-large;
+     transition-duration: 0.2s;
+     color: white;
+}
+
+.free_quote{
+    background-color: rgb(205, 24, 24);
+    padding: 20px;
+    height: 100%;
+    border: none;
+    margin-top: 0px;
+    border-style: none;
+}
+
+.free_quote a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu {
+    list-style: none;
+    margin-left: auto;
+    text-align: right; 
+}
+
+.menu li {
+    height: 100%;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #cacaca;
+    position: relative; /* Add relative positioning */
+}
+
+.menu li a:hover {
+    color: #f9f9f9;
+}
+
+/* Underline animation */
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    top: 30px;
+    height: 2px;
+    background-color: #f9f9f9;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+#introtext{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introsub{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 45%;
+    margin: auto;
+}
+
+.getservices{
+    background-color: rgb(205, 24, 24);
+    padding: 25px;
+    height: 100%;
+    border-style: none;
+    margin-left: 50%;
+    transform: translate(-50%);
+
+}
+
+.getservices a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+.section2{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.section_body{
+    display: flex;
+    padding-bottom: 5%;
+    align-items: center;
+}
+
+.section_header
+{
+    margin-left: 5%;
+    margin-right: 3%;
+    color: red;
+    
+}
+
+.section_text{
+    font-size: 3rem;
+    height: fit-content;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+.box{
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 250px; /* Set width */
+    height: 150px; /* Set height */
+    background-color: white; /* Set background */
+    border-radius: 5px;
+    padding: 20px;
+    transition: box-shadow 1.5s ease;
+}
+
+.box:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur;
+
+}
+
+.arrow{
+    display: flex;
+    opacity: 0;
+}
+
+.arrow:hover {
+    opacity: 1; /* Make the arrow visible on hover */
+    transition: opacity 1.5s ease;
+}
+
+.arrow a{
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+}
+
+.emargency-care {
+    padding: 67px 0
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .emargency-care {
+        padding: 50px 0
+    }
+}
+
+@media (max-width: 575px) {
+    .emargency-care {
+        padding: 50px 0
+    }
+}
+
+.emargency-care .single-emargency {
+    padding: 81px 50px 76px 140px;
+    border-radius: 0;
+    margin-right: -12px;
+    position: relative
+}
+
+.emargency-care .single-emargency::before {
+    position: absolute;
+    content: "";
+    background-color: #EFFDFF;
+    width: 1000%;
+    height: 100%;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    z-index: 0
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.project-details{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
