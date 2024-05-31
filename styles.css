@@ -377,7 +377,7 @@ header {
 }
 
 .video-area {
-    overflow:none;
+    overflow:hidden;
     background-image: url("video-bg.jpg");
     background-size: cover;
     background-position: center;
