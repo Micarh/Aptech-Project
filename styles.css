@@ -381,7 +381,7 @@ header {
     background-position: center;
     padding: 30px;
     text-align: center;
-    width: 40%;
+    width: 50%;
 }
 
 .video-icon {
@@ -456,101 +456,108 @@ header {
     margin: 0 40px;
   }
 
-  
-  @media only screen and (max-width: 600px) {
-    /* Reset some default styles */
-    body, html {
-        margin: 0;
-        padding: 0;
-        font-family: "Jost", sans-serif;
-    }
-
-    /* Header styles */
-    header {
-        padding-bottom: 10%;
-    }
-
-    .container1 {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .info {
-        margin-right: 20px;
-    }
-
-    .social-icons {
-        gap: 10px;
-    }
-
-    .social-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .social-icon i {
-        font-size: 16px;
-    }
-
-    .menu li {
-        margin-left: 10px;
-        padding: 5px;
-    }
-
-    .menu li a {
-        font-size: 14px;
-    }
-
-    .section_text {
-        font-size: 2rem;
-    }
-
-    .box {
-        width: 200px;
-        height: 120px;
-    }
-
-    .arrow a {
-        padding: 5px;
-    }
-
-    .section4-text {
-        padding: 1%;
-    }
-
-    .section_text2 {
-        font-size: 20px;
-    }
-
-    .about-cap-top {
-        font-size: 14px;
-    }
-
-    .single-counter {
-        font-size: 2rem;
-    }
-
-    .pera-count {
-        font-size: 14px;
-    }
-
-    .video-icon {
-        padding: 2%;
-    }
-
-    .video-icon a {
-        font-size: 30px;
-    }
-
-    .logos-slide img {
-        height: 30px;
-        margin: 0 20px;
-    }
-}
 /* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+
+/* Collapsible buttons */
+.collapsible-button {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Hide original containers and show buttons */
+    .container1, .menu {
+        display: none;
+    }
+    #contactButton, #menuButton {
+        display: block;
+    }
+
+    /* Header and container adjustments */
+    .container {
+        flex-direction: column;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    #introtext {
+        font-size: 36px;
+        width: 80%;
+    }
+    #introsub {
+        font-size: 18px;
+        width: 80%;
+    }
+    .getservices {
+        margin-left: 0;
+        transform: none;
+    }
+
+    /* Section 2 */
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_text {
+        font-size: 2rem;
+    }
+
+    /* Section 3 */
+    .single-emargency {
+        width: 80%;
+    }
+
+    /* Section 4 */
+    .section4 {
+        flex-direction: column;
+    }
+    .video-area {
+        width: 100%;
+    }
+
+    /* Section 5 */
+    .section5-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .section5_body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .company {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .f-section {
+        width: 100%;
+        padding-left: 0;
+    }
 }
