@@ -10,7 +10,7 @@ body, html {
 
 /* Header styles */
 header {
-    background-image: url("daniel-olah-MvoWhoTzEqo-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("h1_hero.jpg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -70,6 +70,7 @@ header {
     gap: 10px;
     position: sticky;
     margin-bottom: 10%;
+    position: sticky;
 }
 
 .logo {
@@ -124,7 +125,7 @@ header {
 
 .menu li a {
     text-decoration: none;
-    color: #cacaca;
+    color: #e7e7e7;
     position: relative; /* Add relative positioning */
 }
 
@@ -275,10 +276,6 @@ header {
     margin-left: auto;
 }
 
-.emargency-cap{
-
-}
-
 .emargency-cap a{
     text-decoration: none;
     color: black;
@@ -318,16 +315,151 @@ header {
     color: #ffffff;
     transition: 0.5s ease;
 }
+
+.section4 {
+    display: flex;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+
+.section4-text{
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 2%;
+}
+
+.section4-intro{
+    display: flex;
+    padding-bottom: 0%;
+    align-items: center;
+}
+
+.section_text2 {
+    width: 50%;
+    font-size: 24    px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-cap-top {
+    width: 50%;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.data-count{
+    display: flex;
+    margin-left: 5%;
+}
+
+.single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.single-counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.pera-count {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.video-area {
+    background-image: url("video-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    text-align: center;
+    width: 40%;
+}
+
+.video-icon {
+    margin: auto;
+    margin-top: 50%;
+    padding: 4%;
+    border: #e7e7e7 solid;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: -10px;
+}
+
+.video-icon a {
+    color: #fff;
+    font-size: 40px;
+}
+
+.section5{
+    background-color: rgb(237, 243, 246);
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+
 /* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-
-.project-details{
-    width: 20%;
-    text-align: center;
-    margin: auto;
 }
