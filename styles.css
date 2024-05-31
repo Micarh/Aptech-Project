@@ -6,6 +6,7 @@ body, html {
     padding: 0;
     font-family: "Jost", sans-serif;
     /* Add custom font family here */
+    overflow: none;
 }
 
 /* Header styles */
@@ -376,13 +377,12 @@ header {
 }
 
 .video-area {
-    max-width: 100%;
     background-image: url("video-bg.jpg");
     background-size: cover;
     background-position: center;
     padding: 30px;
     text-align: center;
-    width: 50%;
+    width: 40%;
 }
 
 .video-icon {
