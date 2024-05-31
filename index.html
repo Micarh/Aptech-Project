@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Industry Template</title>
+    <title>Industry | Template</title>
     <link rel="icon" type="image/x-icon" href="logo1.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -24,6 +24,7 @@
             <div class="social-icon"><a href=""><i class="fab fa-youtube"></i></a></div>
         </div>
     </div>
+    <button id="contactButton" class="collapsible-button">Contact</button>
     <nav>
         <div class="container">
             <div class="logo"><a href="#"><img src="logo.png" alt="Logo"></a></div>
@@ -39,6 +40,7 @@
             </ul>
         </div>
     </nav>
+    <button id="menuButton" class="collapsible-button">Menu</button>
     <p id="introtext">Best technology and <br>awesome service we can offer</p>
     <p id="introsub">Ullamcorper fringi tortor consec adipis elit sed do eiusmod tempor.</p><br><br>
     <button class="getservices"><a href="#">Check our webisite &#8594;</a></button>
@@ -68,7 +70,7 @@
         <div class="single-emargency">
             <div class="emargency-cap">
                 <div class="abstract"><a href="#">&#8213;</a></div>
-                <a href="#" id="emargency-link">We have all your needs, from micro<br>macro planning</a>
+                <a href="#" id="emargency-link">We have all your needs, from Micro Macro planning</a>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
                 <p class="emargenc-cap">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
                 <button class="learn-btn"><a href="#">Learn More &#8594;</a></button>
@@ -108,7 +110,7 @@
     <div class="video-area">
         <div class="container">
                 <div class="video-icon">
-                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" target="_blank"><i class="fas fa-play"></i></a>
+                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
                 </div>
         </div>
     </div>
@@ -139,6 +141,20 @@
 </html>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const contactButton = document.getElementById('contactButton');
+        const menuButton = document.getElementById('menuButton');
+        const contact = document.getElementById('contact');
+        const menu = document.getElementById('menu');
+
+        contactButton.addEventListener('click', function () {
+            contact.style.display = contact.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        menuButton.addEventListener('click', function () {
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        });
+    });
     var copy = document.querySelector(".logos-slide").cloneNode(true);
     document.querySelector(".logos").appendChild(copy);
   </script>
