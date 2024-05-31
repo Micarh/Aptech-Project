@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
 
 body, html {
+    max-width: 100%,
     margin: 0;
     padding: 0;
     font-family: "Jost", sans-serif;
@@ -376,6 +377,7 @@ header {
 }
 
 .video-area {
+    max-width: 100%;
     background-image: url("video-bg.jpg");
     background-size: cover;
     background-position: center;
